@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howard's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/scoll.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+     
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Howard</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a onclick="select()" href="#home">INICIO</a></li>
+                    <li><a onclick="select()" href="#about">SOBRE MI</a></li>
+                    <li><a onclick="select()" href="#skills">HABILIDADES</a></li>
+                    <li><a onclick="select()" href="#cv">CURRICULUM</a></li>
+                    <li><a onclick="select()" href="#portfolio">PORTAFOLIO</a></li>
+                    <li><a onclick="select()" href="#contacts">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-responsive" onclick="showHideMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+        </header>
+    </div>
+
+    <section id="home" class="home">
+        <div class="cont-banner">
+            <div class="conteiner-img">
+                <img src="./img/smoking/portafolio-perfil-red.png" alt="Howard's picture">
+            </div>
+            <h1>Howard Hernández</h1>
+            <h2>Ing. Ciencias Informáticas</h2>
+            <div class="network">
+                <a href="https://www.facebook.com/howard.hernandez.549" class="net-circle"><i
+                        class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                <a href="https://github.com/Casiner0" class="net-circle"><i class="fa-brands fa-github"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/howard-hernandez-94a086196/" class="net-circle"><i
+                        class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href="https://t.me/CasinerO" class="net-circle"><i class="fa-brands fa-telegram"
+                        aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="cont-section">
+            <h2>Sobre Mi</h2>
+            <p>Hola, soy <span class="overlay">Howard Hernández González</span>. Soy una persona proactiva, puntual,
+                organizado y
+                responsable.
+                Disfruto mucho obteniendo nuevos conocimientos, tanto cultura general como profesional. Soy una persona
+                que sabe escuchar
+                y siempre acepto una buena crítica. Pienso que siempre se puede aprender de cualquier persona,
+                desde una anciano hasta de un niño. Mi objetivo es obtener un puesto donde pueda tener diferentes retos,
+                compartir mi experiencia
+                y a su vez ganar nuevos conocimientos.
+            </p>
+            <div class="row">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li><b>De:</b> Artemisa, Cuba</li>
+                        <li><b>Edad:</b> <span id="edad"></span></li>
+                        <li><b>Email:</b> hcasinero@gmail.com</li>
+                        <li><b>Teléfono:</b> (+53) 58053375</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Intereces</h3>
+                    <div class="cont-interesting">
+                        <div class="interesting">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interesting">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interesting">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interesting">
+                            <i class="fa-solid fa-plane-up"></i>
+                            <span>VIAJE</span>
+                        </div>
+                        <div class="interesting">
+                            <i class="fa-solid fa-music"></i>
+                            <span>BAILE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="cont-section">
+            <h2>Habilidades</h2>
+            <div class="row">
+                <div class="col">
+                    <h3>Técnicas</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="skill-progress">
+                            <div class="progress javascript">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="skill-progress">
+                            <div class="progress php">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="skill-progress">
+                            <div class="progress htmlcss">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="skill-progress">
+                            <div class="progress java">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="skill-progress">
+                            <div class="progress sql">
+                                <span>73%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Odoo v15</span>
+                        <div class="skill-progress">
+                            <div class="progress odoo15">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="skill-progress">
+                            <div class="progress react">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>Diseño</h3>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="skill-progress">
+                            <div class="progress photoshop">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>3D Max Studio</span>
+                        <div class="skill-progress">
+                            <div class="progress max-studio">
+                                <span>58%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creación de Logos</span>
+                        <div class="skill-progress">
+                            <div class="progress c-logos">
+                                <span>62%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Edición de Videos</span>
+                        <div class="skill-progress">
+                            <div class="progress e-video">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cv" id="cv">
+        <div class="cont-section">
+            <h2>Curriculum</h2>
+            <div class="row">
+                <div class="col left">
+                    <h3>Educación</h3>
+                    <div class="left item">
+                        <h4>Ingenería en las Ciencias Informáticas</h4>
+                        <span class="study">Universidad de las Ciencias Informáticas, La Habana (Cuba)</span>
+                        <span class="date">2023</span>
+                        <p> Desarrollé conocimientos en el Cálculo I y II, Idioma extranjero (Ingles),
+                            Matemática Discreta, Arquitectura de Computadoras, Programación I,II,III,IV y V, Ingenería
+                            de Software I y II, Base de Datos I y II,
+                            Redes y Seguridad Informática, etc.
+                        </p>
+                        <div class="left-conect">
+                            <div class="left-circle"></div>
+                        </div>
+                    </div>
+                    <div class="left item">
+                        <h4>Curso de Inkscape</h4>
+                        <span class="study">Universidad de las Ciencias Informáticas, La Habana (Cuba)</span>
+                        <span class="date">2016</span>
+                        <p> Desarrollé la habilidad de crear logotipos y animaciones en la herramienta de código abierto
+                            Inkscape.</p>
+                        <div class="left-conect">
+                            <div class="left-circle"></div>
+                        </div>
+                    </div>
+                    <div class="left item">
+                        <h4>Curso de Ingles General 1 y 2</h4>
+                        <span class="study">Escuela de Idiomas “Julius Fucik”, Artemisa (Cuba)</span>
+                        <span class="date">2013</span>
+                        <p> Afiancé mi conocimientos por el idioma ingles, obteniendo un promedio de 96 / 100.
+                        </p>
+                        <div class="left-conect">
+                            <div class="left-circle"></div>
+                        </div>
+                    </div>
+                    <div class="left item">
+                        <h4>Curso de Ingles Básico 1 y 2</h4>
+                        <span class="study">Escuela de Idiomas “Julius Fucik”, Artemisa (Cuba)</span>
+                        <span class="date">2012</span>
+                        <p> Desarrollé mi conocimientos por el idioma ingles, obteniendo un promedio de 95 / 100.
+                        </p>
+                        <div class="left-conect">
+                            <div class="left-circle"></div>
+                        </div>
+                    </div>
+                    <div class="left item">
+                        <h4>Técnico Medio en Informática</h4>
+                        <span class="study">IPI Julio Antonio Mella, La Habana (Cuba)</span>
+                        <span class="date">2007</span>
+                        <p> Aprendí los conceptos de la Informática, Lógica de la Programación, Arquitectura y Seguridad
+                            Informática,
+                            Redes, Lenguaje y Técnicas de Programación, Base de Datos, etc. Obtuve un promedio de 95 /
+                            100.
+                        </p>
+                        <div class="left-conect">
+                            <div class="left-circle"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col right">
+                    <h3>Experiencia</h3>
+                    <div class="right item">
+                        <h4>Módulo para la gestión de Auditorias de Seguridad Informática</h4>
+                        <span class="study">Universidad de las Ciencias Informáticas, La Habana (Cuba)</span>
+                        <span class="date">2023</span>
+                        <p> Módulo creado en Odoo en su versión 15, para llevar un control y analisis de las autitorias
+                            de seguridad Informática
+                            llevada acabo por la Dirección de Seguridad Informática. <br><br>
+                            <b>Tecnologías Utilizadas</b><br>
+                            <div class="tech">
+                                <span>Odoo15</span><span>Paython</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                            </div>
+                            
+                        </p>
+                        <div class="right-conect">
+                            <div class="right-circle"></div>
+                        </div>
+                    </div>
+                    <div class="right item">
+                        <h4>Módulo para crear reportes impresos y pre-impresos Softel</h4>
+                        <span class="study">Trabajo independiente, Artemisa (Cuba)</span>
+                        <span class="date">2022</span>
+                        <p> Módulo ajustado en Odoo v14, para crear reportes impresos y pre-impresos, ajustando interfaz
+                            y campos.<br><br>
+                            <b>Tecnologías Utilizadas</b><br>
+                            <div class="tech">
+                                <span>Odoo14</span><span>Paython</span><span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                            </div>
+                            
+                        </p>
+                        <div class="right-conect">
+                            <div class="right-circle"></div>
+                        </div>
+                    </div>
+                    <div class="right item">
+                        <h4>Sistema de Gestión de Postgrados</h4>
+                        <span class="study">Universidad de las Ciencias Informáticas, La Habana (Cuba)</span>
+                        <span class="date">2021</span>
+                        <p> Aplicación Web creada para gestionar los cursos de Postgrados en la Universidad.
+                            (Prototipo)<br><br>
+                            <b>Tecnologías Utilizadas</b><br>
+                            <div class="tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>PHP</span><span>MySQL</span>
+                            </div>
+                            
+                        </p>
+                        <div class="right-conect">
+                            <div class="right-circle"></div>
+                        </div>
+                    </div>
+                    <div class="right item">
+                        <h4>Sistema de Gestión de reservaciones para hoteles</h4>
+                        <span class="study">Universidad de las Ciencias Informáticas, La Habana (Cuba)</span>
+                        <span class="date">2021</span>
+                        <p> Aplicación Web creada para gestionar las reservaciones de habitaciones de los hoteles.
+                            (Prototipo)<br><br>
+                            <b>Tecnologías Utilizadas</b><br>
+                            <div class="tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>PHP</span><span>MySQL</span>
+                            </div>
+                            
+                        </p>
+                        <div class="right-conect">
+                            <div class="right-circle"></div>
+                        </div>
+                    </div>
+                    <div class="right item">
+                        <h4>Red Hidráulica</h4>
+                        <span class="study">Universidad de las Ciencias Informáticas, La Habana (Cuba)</span>
+                        <span class="date">2019</span>
+                        <p> Aplicación Desktop creada para gestionar los Recursos Hidráulicos de un acueducto.
+                            (Prototipo)<br><br>
+                            <b>Tecnologías Utilizadas</b><br>
+                            <div class="tech">
+                                <span>JAVA</span>
+                            </div>
+                            
+                        </p>
+                        <div class="right-conect">
+                            <div class="right-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a type="button" class="anim-button" href="./download/Currículum Howard.pdf"
+                download="Currículum Howard.pdf">
+                DESCARGAR CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="cont-section">
+            <h2>Portafolio</h2>
+            <div class="gallery ">
+                <div class="proyect wow fadeInUp">
+                    <img src="./img/work/red_hidraulica.jpg" alt="Red Hidráulica">
+                    <div class="overlay">
+                        <h3>Red Hidráulica</h3>
+                        <p>JAVA</p>
+                    </div>
+                </div>
+
+                <div class="proyect wow fadeInUp">
+                    <img src="./img/work/scp.png" alt="">
+                    <div class="overlay">
+                        <h3>Gestión de Postgrados</h3>
+                        <p>HTML-CSS-JS</p>
+                        <p>PHP-MySQL</p>
+                    </div>
+                </div>
+                <div class="proyect wow fadeInUp">
+                    <img src="./img/work/sgrh.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Gestión Hotelera</h3>
+                        <p>HTML-CSS-JS</p>
+                        <p>PHP-MySQL</p>
+                    </div>
+                </div>
+                <div class="proyect wow fadeInUp">
+                    <img src="./img/work/gsi.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Auditoría Seguridad Informática</h3>
+                        <p>Odoo 15</p>
+                    </div>
+                </div>
+                <div class="proyect wow fadeInUp">
+                    <img src="./img/work/3D.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño 3D</h3>
+                        <p>3D Max Studio</p>
+                    </div>
+                </div>
+                <div class="proyect wow fadeInUp">
+                    <img src="./img/work/logo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creación de Logos</h3>
+                        <p>Inkscape</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Los proyectos puedes verlos en</h1>
+            <a type="button" class="anim-button" href="https://github.com/Casiner0" download="Currículum Howard.pdf">
+                GitHub <i class="fa-brands fa-github"></i>
+                <span class="overlay"></span>
+            </a>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="cont-section">
+            <h2>Contacto</h2>
+            <div class="row">
+                <div class="col">
+                    <form id="form" method="POST">
+                        <div class="form-row">
+                            <input type="text" class="form-input" id="Name" name="Name" placeholder="Nombre">
+                            <input type="text" class="form-input" id="Email" name="Email"
+                                placeholder="Correo electrónico">
+                            <input type="text" class="form-input" id="Subject" name="Subject" placeholder="Asunto">
+                            <textarea class="form-input" id="Message" name="Message" rows="6"
+                                placeholder="Escriba su mensaje aquí.."></textarea>
+                            <button type="submit" id="button" class="anim-button" value="Enviar">Enviar <i
+                                    class="fa-solid fa-paper-plane"></i><span class="overlay"></span>
+                            </button>
+                            <div class="animate__animated animate__fadeIn alert" id="alerta_enviado">Mensaje Enviado
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="conteiner-img">
+                        <img src="./img/casual/portafolio-casual-red.png" alt="Howard's picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="#home" class="up">
+            <i class="fa-solid fa-angle-double-up"></i>
+        </a>
+        <div class="network">
+            <a href="https://www.facebook.com/howard.hernandez.549" class="net-circle"><i
+                    class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://github.com/Casiner0" class="net-circle"><i class="fa-brands fa-github"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/howard-hernandez-94a086196/" class="net-circle"><i
+                    class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://t.me/CasinerO" class="net-circle"><i class="fa-brands fa-telegram"
+                    aria-hidden="true"></i></a>
+        </div>
+        <div>
+            <p>&copy;<span id="anno"></span></p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript"> emailjs.init('YsBO0R9p8FVViweW6')</script>
+
+    <script src="./js/validations.js"></script>
+
+    <script src="./js/funtions.js"></script>
+
+    <script src="./js/portfolio.js"></script>
+</body>
+
+</html>
