@@ -16,7 +16,7 @@ html{
 body{
     /* Esta configuración es para tener un fondo estático */
     background-image:url(../img/man-programming-on-a-computer.jpg);
-    background-size: cover; 
+    background-size:cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -31,17 +31,17 @@ body{
 }
 
 .container-header header{
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 5px 10px;
 }
 
 .container-header header .logo a{
     font-family: 'Bungee';
-    font-size: 36px;
+    font-size: 25px;
     color: #EF3724;
     text-decoration: none;
 }
@@ -86,7 +86,7 @@ body{
 .home .cont-banner{
     padding: 20px;
     background-color: #1e2326;
-    max-width: 520px;
+    max-width: 350px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
@@ -96,18 +96,22 @@ body{
     margin-top: 40px;
     display: block;
     width: 80%;
-    margin: auto;
+    /*margin: auto;*/
     
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
 }
 
 .home .cont-banner h1{
     margin-top: 40px;
-    font-size: 42px;
+    /*font-size: 20px;*/
     font-family: 'Bungee';
 }
 
 .home .cont-banner h2{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: normal;
 }
 
@@ -130,69 +134,70 @@ body{
 }
 
 /* SECCION SOBRE MI */
-.about{
-    background-color: #1e2326;
+.section-less-dark{
+    background-color: #252a2e;
     color: white;
     padding: 50px 20px;
 }
 
-.about .cont-section{
+.cont-section{
     max-width: 1100px;
     margin: auto;
 }
 
-.about h2{
-    font-size: 48px;
+.header-text-section{
+    font-size: 35px;
     font-family: 'Bungee';
     text-align: center;
     padding: 20px 0;
 }
 
-.about .cont-section p{
+.cont-section p{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
 
-.about .cont-section p span{
+.cont-section p span{
     color: #EF3724;
     font-weight: bold;
 }
 
-.about .row{
+.rows{
     display: flex;
 }
 
-.about .row .col{
+.columns{
     width: 50%;
+    padding:  0 20px;
 }
 
-.about .row .col h3{
+.title-column{
     font-size: 28px;
     font-family: 'Bungee';
     margin-bottom: 25px;
 }
 
-.about .row .col ul{
+.list{
     list-style: none;
 }
 
-.about .row .col ul li{
+.list-li{
     margin: 12px 0;
 }
 
-.about .row .col ul li b{
+.list-li b{
     display: inline-block;
     color: #EF3724;
     width: 130px;
 }
 
-.about .row .col .cont-interesting{
+.cont-interesting{
     display: flex;
     flex-wrap: wrap;
 }
 
-.about .row .col .cont-interesting .interesting{
+.interesting{
     width: 100px;
     height: 100px;
     background-color: #252a2e;
@@ -205,59 +210,25 @@ body{
     transition: .3s;
 }
 
-.about .row .col .cont-interesting .interesting:hover{
+.interesting:hover{
     background-color: #EF3724;
 }
 
-.about .row .col .cont-interesting .interesting i{
+.interesting i{
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-
-
-
 /* SECCION HABILIDADES */
-.skills{
-    background-color: #252a2e;
-    color: white;
-    padding: 50px 20px;
-}
 
-.skill .cont-section{
-    max-width: 1100px;
-    margin: auto;
-}
 
-.skills h2{
-    font-size: 48px;
-    font-family: 'Bungee';
-    text-align: center;
-    padding: 20px 0;
-}
-
-.skills .row{
-    display: flex;
-}
-
-.skills .row .col{
-    width: 50%;
-    padding:  0 20px;
-}
-
-.skills .row .col h3{
-    font-size: 28px;
-    font-family: 'Bungee';
-    margin-bottom: 25px;
-}
-
-.skills .skill > span{
+.skill > span{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
 
-.skills .skill .skill-progress{
+.skill-progress{
     height: 8px; 
     width: 80%;
     background-color: #131517;
@@ -265,7 +236,7 @@ body{
     margin-bottom: 30px;
 }
 
-.skills .skill .progress{
+.progress{
     height: 8px;
     background-color: #EF3724;
     position: absolute;
@@ -273,7 +244,7 @@ body{
     left: 0;
 }
 
-.skills .skill .skill-progress span{
+.skill-progress span{
     position: absolute;
     height: 40px;
     width: 40px;
@@ -289,7 +260,7 @@ body{
 /* Esto se mostrará de forma dinámica 
  Habilidades Técnicas*/
 
-.skills .skill .javascript{
+.javascript{
     width: 0%;
     animation: 2s javascript forwards;
 }
@@ -299,7 +270,7 @@ body{
     100%{width: 60%;}
 }
 
-.skills .skill .htmlcss{
+.htmlcss{
     width: 0;
     animation: 2s htmlcss forwards;
 }
@@ -309,7 +280,7 @@ body{
     100%{width: 85%;}
 }
 
-.skills .skill .php{
+.php{
     width: 0;
     animation: 2s php forwards;
 }
@@ -319,7 +290,7 @@ body{
     100%{width: 55%;}
 }
 
-.skills .skill .sql{
+.sql{
     width: 0;
     animation: 2s sql forwards;
 }
@@ -329,7 +300,7 @@ body{
     100%{width: 73%;}
 }
 
-.skills .skill .odoo15{
+.odoo15{
     width: 0;
     animation: 2s odoo15 forwards;
 }
@@ -339,7 +310,7 @@ body{
     100%{width: 40%;}
 }
 
-.skills .skill .react{
+.react{
     width: 0;
     animation: 2s react forwards;
 }
@@ -349,7 +320,7 @@ body{
     100%{width: 50%;}
 }
 
-.skills .skill .java{
+.java{
     width: 0;
     animation: 2s java forwards;
 }
@@ -361,7 +332,7 @@ body{
 
 /* Habilidades de diseño */
 
-.skills .skill .photoshop{
+.photoshop{
     width: 0;
     animation: 2s photoshop forwards;
 }
@@ -371,7 +342,7 @@ body{
     100%{width: 80%;}
 }
 
-.skills .skill .max-studio{
+.max-studio{
     width: 0;
     animation: 2s max-studio forwards;
 }
@@ -381,7 +352,7 @@ body{
     100%{width: 58%;}
 }
 
-.skills .skill .c-logos{
+.c-logos{
     width: 0;
     animation: 2s c-logos forwards;
 }
@@ -391,7 +362,7 @@ body{
     100%{width: 62%;}
 }
 
-.skills .skill .e-video{
+.e-video{
     width: 0;
     animation: 2s e-video forwards;
 }
@@ -416,45 +387,21 @@ body{
     max-width: 80%;
     margin: auto;
     margin-bottom: 50px;
-    
+    margin-top: 30px;
     border-radius: 40px;
 }
 
-.cv h2{
-    font-size: 48px;
-    font-family: 'Bungee';
-    text-align: center;
-    padding: 20px 0;
+
+
+.left{
+    border-left: 2px solid #252a2e; 
 }
 
-.cv .row{
-    display: flex;
-}
-
-.cv .row .col{
-    width: 49%;
-    padding: 0 20px;
-}
-
-.cv .row .col h3{
-    font-size: 28px;
-    font-family: 'Bungee';
-    margin-bottom: 25px;
-}
-
-.cv .row .right h3{
-    padding-left: 20px ;
-}
-
-.cv .row .left{
+.right{
     border-right: 2px solid #252a2e; 
 }
 
-.cv .row .right{
-    border-right: 2px solid #252a2e; 
-}
-
-.cv .row .item{
+.item{
     min-height: 255px;
     padding: 25px;
     margin-bottom: 30px;
@@ -462,78 +409,71 @@ body{
     position: relative;
 }
 
-.cv .row .item h4{
+.cv .rows .item h4{
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.cv .row .item .study{
+.cv .rows .item .study{
     color: #EF3724;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 
-.cv .row .item .date{
+.cv .rows .item .date{
     display: block;
     color: #EF3724;
     margin-bottom: 10px;
 }
 
-.cv .row .item p{
+.cv .rows .item p{
     line-height: 24px;
 }
 
-.cv .row .left{
+.cv .rows .left{
     border-right: 2px solid #EF3724;
     margin-right: 20px;
 }
 
-.cv .row .right{
+.cv .rows .right{
     border-left: 2px solid #EF3724;
     margin-left: 20px;
 }
 
-.cv .row .item .left-conect{
+.conect{
     height: 2px;
     background-color: #EF3724;
     width: 47px;
     position: absolute;
     top: 50%;
+    z-index: 5;
+}
+
+.left-conect{
     right: -47px;
-    z-index: 5;
 }
 
-.cv .row .item .left-conect .left-circle{
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #EF3724;
-    float: right;
-    position: relative;
-    bottom: 4px;
-}
-
-.cv .row .item .right-conect{
-    height: 2px;
-    background-color: #EF3724;
-    width: 47px;
-    position: absolute;
-    top: 50%;
+.right-conect{
     left: -47px;
-    z-index: 5;
 }
 
-.cv .row .item .right-conect .right-circle{
+.circle{
     display: block;
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background-color: #EF3724;
-    float: left;
     position: relative;
     bottom: 4px;
+}
+
+.left-circle{
+    float: right;
+}
+
+.right-circle{
+    float: left;
 }
 
 .tech{
@@ -552,37 +492,24 @@ body{
 }
 
 /* SECCION PORTAFOLIO */
-.portfolio{
+.section-dark{
     background-color: #1e2326;
     color: white;
     padding: 50px 20px;
 }
 
-.portfolio .cont-section{
-    max-width: 1100px;
-    margin: auto;
-}
-
-.portfolio h2{
-    font-size: 48px;
-    font-family: 'Bungee';
-    text-align: center;
-    padding: 20px 0;
-}
-
-
- .portfolio h1{
+ .section-dark h1{
     color: #343a40;
  }
 
- .portfolio .gallery{
+ .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     
  }
 
- .portfolio .gallery .proyect{
+.proyect{
     position: relative;
     max-width: 340px;
     height: fit-content;
@@ -590,13 +517,13 @@ body{
     cursor:pointer;
  }
 
- .portfolio .gallery .proyect img{
+.proyect img{
     width: 100%;
     display: block;
     border-radius: 20px;
  }
 
- .portfolio .gallery .proyect .overlay{
+.proyect .overlay{
     position: absolute;
     top: 0;
     width: 100%;
@@ -613,27 +540,19 @@ body{
     border-radius: 20px;
  }
 
- .portfolio .gallery .proyect .overlay h3{
+.proyect .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
     color: white;
  }
 
- .portfolio .gallery .proyect .overlay:hover{
+.proyect .overlay:hover{
     opacity: 0.8;
  }
 
- .portfolio .gallery .proyect .overlay:hover h3{
+.proyect .overlay:hover h3{
     margin-bottom: 0px;
  }
-
-.portfolio .cont-section h1{
-    color: white;
-    font-size: 30px;
-    font-family: 'Bungee';
-    text-align: center;
-    padding: 20px 0;
-}
 
  /* SECCION CONTACTO */
  .contacts{
@@ -646,29 +565,13 @@ body{
     padding: 50px 20px;
 }
 
-.contacts .cont-section{
-    max-width: 1100px;
-    margin: auto;
-}
-
-.contacts h2{
-    font-size: 48px;
-    font-family: 'Bungee';
-    text-align: center;
-    padding: 20px 0;
-}
-
-.contacts .row{
-    display: flex;
-}
-
 .contacts .col{
     width: 50%;
     padding: 10px;
     position: relative;
 }
 
-.contacts .row img{
+.contacts .rows img{
     margin-top: 40px;
     display: block;
     width: 80%;
@@ -809,7 +712,6 @@ footer .up{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 60px;
         left: 0;
         width: 100%;
         background-color: #252a2e;
@@ -828,24 +730,16 @@ footer .up{
 
     @media screen and (max-width: 400px){
         
-        .about .row{
+        .rows{
             display: block;
             margin-right: auto;
         }
 
-        .about .row .col{
-            width: fit-content;
-        }
-
-        .skills .row{
-            display: block;
-        }
-
-        .skills .row .col{
+        .columns{
             width: 100%;
         }
 
-        .skills .row .col .skill-progress{
+        .skill-progress{
             width: 100%;
         }
 
@@ -853,46 +747,35 @@ footer .up{
             max-width: 100%;
         }
 
-        .cv .row{
-            display: block;
-        }
-
-        .cv .row .col{
-            width: 100%;
-        }
-
-        .portfolio .gallery{
+        
+        .gallery{
             display: block;
             width: 100%;
         }
 
-        .portfolio .gallery .proyect{
+        .proyect{
             max-width: 100%;
         }
 
-        .portfolio .gallery .proyect img{
+        .proyect img{
             width: 100%;
         }
 
-        .contacts .row{
-            display: block;
+        .contacts .col{
+            width: 100%;
         }
 
-        .contacts .row .col {
-            width: 95%;
-        }
-
-        .contacts .row .col textarea{
+        .col textarea{
             min-width: 100%;
             
         }
 
-        .contacts .row .col .conteiner-img{
+        .conteiner-img{
             text-align: center;
             margin-top: 50px;
         }
 
-        .contacts .row .col .conteiner-img img{
+        .conteiner-img img{
             margin: 0 auto;
             display: block;
             
