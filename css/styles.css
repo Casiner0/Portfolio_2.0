@@ -21,6 +21,19 @@ body{
     background-attachment: fixed;
 }
 
+.hidden{
+    overflow: hidden;
+}
+
+.container-loader{
+    height: 100vh;
+    background-color: #1e2326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .container-header{
     background: #1e2326;
     position: fixed;
