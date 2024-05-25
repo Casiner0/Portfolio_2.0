@@ -1,6 +1,7 @@
 window.onload = function() {
     alert('Se cargo');
     $('#onload').fadeOut();
-    $('body', '#nav').removeClass('hidden');
-    $('#nav').addClass('container-header');
+    $('body').removeClass('hidden');
+    $('#navegate').removeClass('hidden').addClass('container-header');
+    
 }
