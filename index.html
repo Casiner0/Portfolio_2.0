@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" href="./css/scoll.css">
     <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./css/dark_mode.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -18,25 +19,29 @@
 </head>
 
 <body class="hidden">
-
+    
+<!-- LOADER -->
     <div class="container-loader" id="onload">
         <div class="loader"></div>
     </div>
     
-     
+<!-- NAVEGATE BAR --> 
     <div class="hidden" id="navegate">
         <header>
-            <div class="logo">
-                <a href="#">Howard</a>
+            <div>
+                <a class="logo" href="#">Howard</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a onclick="select()" href="#home">INICIO</a></li>
-                    <li><a onclick="select()" href="#about">SOBRE MI</a></li>
-                    <li><a onclick="select()" href="#skills">HABILIDADES</a></li>
-                    <li><a onclick="select()" href="#cv">CURRICULUM</a></li>
-                    <li><a onclick="select()" href="#portfolio">PORTAFOLIO</a></li>
-                    <li><a onclick="select()" href="#contacts">CONTACTO</a></li>
+                    <li><a id="navLink" class="dark" href="#home">INICIO</a></li>
+                    <li><a id="navLink" class="dark" href="#about">SOBRE MI</a></li>
+                    <li><a id="navLink" class="dark" href="#skills">HABILIDADES</a></li>
+                    <li><a id="navLink" class="dark" href="#cv">CURRICULUM</a></li>
+                    <li><a id="navLink" class="dark" href="#portfolio">PORTAFOLIO</a></li>
+                    <li><a id="navLink" class="dark" href="#contacts">CONTACTO</a></li>
+                    
+                    <input type="checkbox" id="dark-mode" />
+                    <label for="dark-mode"></label> 
                 </ul>
             </nav>
             <nav class="nav-responsive" onclick="showHideMenu()">
@@ -44,7 +49,7 @@
             </nav>
         </header>
     </div>
-
+<!-- HOME -->
     <section id="home" class="home">
         <div class="cont-banner">
             <div class="conteiner-img">
@@ -53,28 +58,30 @@
             <h1>Howard Hernández</h1>
             <h2>FullStack Web Developer</h2>
             <div class="network">
-                <a href="https://www.facebook.com/howard.hernandez.549" class="net-circle">
+                <a href="https://www.facebook.com/howard.hernandez.549" class="net-circle dark">
                     <i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                <a href="https://github.com/Casiner0" class="net-circle"><i class="fa-brands fa-github"
+                <a href="https://github.com/Casiner0" class="net-circle dark"><i class="fa-brands fa-github"
                         aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/howard-hernandez-94a086196/" class="net-circle">
+                <a href="https://www.linkedin.com/in/howard-hernandez-94a086196/" class="net-circle dark">
                     <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-                <a href="https://t.me/CasinerO" class="net-circle"><i class="fa-brands fa-telegram"
+                <a href="https://t.me/CasinerO" class="net-circle dark"><i class="fa-brands fa-telegram"
                         aria-hidden="true"></i></a>
             </div>
 
         </div>
     </section>
-
+<!-- ABOUT ME -->
     <section class="section-dark" id="about">
         <div class="cont-section">
             <h2 class="header-text-section">Sobre Mi</h2>
-            <p>Hola, soy <span class="overlay">Howard Hernández González</span>. Soy una persona proactiva, puntual,
-                organizado y responsable.
-                Disfruto obteniendo nuevos conocimientos, tanto de cultura general como profesional. Soy una persona
-                que sabe escuchar y siempre acepto una buena crítica. Pienso que siempre se puede aprender de cualquier persona,
-                desde una anciano hasta de un niño. Mi objetivo es obtener un puesto donde pueda tener diferentes retos,
-                compartir mi experiencia y a su vez ganar nuevos conocimientos.
+            <p>Hola, mi nombre es <span class="overlay">Howard Hernández González</span>, un profesional proactivo, puntual, organizado y responsable, 
+                con un fuerte compromiso hacia el crecimiento personal y profesional. A lo largo de mi trayectoria, he desarrollado una pasión por adquirir 
+                nuevos conocimientos, tanto en el ámbito cultural como en el ámbito profesional. Considero que la educación continua es fundamental para 
+                mantenerse actualizado y adaptarse a los constantes cambios del mercado laboral. Soy un excelente oyente y valoro enormemente las críticas 
+                constructivas, ya que creo, que siempre hay algo que aprender de los demás, independientemente de su edad o experiencia. 
+                Estoy convencido de que cada interacción es una oportunidad para crecer y mejorar. Mi objetivo principal es obtener un puesto desafiante 
+                que me permita aplicar mis habilidades y conocimientos, mientras me brinda la oportunidad de enfrentar nuevos retos y adquirir experiencias valiosas. 
+                Estoy dispuesto a compartir mi experiencia y, al mismo tiempo, aprender de mis compañeros.
             </p>
             <div class="rows">
                 <div class="columns">
@@ -116,6 +123,7 @@
         </div>
     </section>
 
+<!-- SKILLS -->
     <section class="section-less-dark" id="skills">
         <div class="cont-section">
             <h2 class="header-text-section">Habilidades</h2>
@@ -219,8 +227,9 @@
         </div>
     </section>
 
+<!-- CV -->
     <section class="cv" id="cv">
-        <div class="cont-section">
+        <div class="cv-cont-section">
             <h2 class="header-text-section">Curriculum</h2>
             <div class="rows">
                 <div class="columns left">
@@ -331,7 +340,7 @@
                     </div>
                     <div class="right item">
                         <h4>Módulo para crear reportes impresos y pre-impresos Softel</h4>
-                        <span class="study">FullStack</span>
+                        <span class="study">Freelancer</span>
                         <span class="date">2022</span>
                         <p> Módulo ajustado en Odoo v14, para crear reportes impresos y pre-impresos, ajustando interfaz
                             y campos.<br><br>
@@ -418,6 +427,7 @@
         </div>
     </section>
 
+<!-- PORTFOLIO -->
     <section class="section-dark" id="portfolio">
         <div class="cont-section">
             <h2 class="header-text-section">Portafolio</h2>
@@ -476,6 +486,7 @@
         </div>
     </section>
 
+<!-- CONTACTOS -->
     <section class="contacts" id="contacts">
         <div class="cont-section">
             <h2 class="header-text-section">Contacto</h2>
@@ -492,8 +503,9 @@
                             <button type="submit" id="button" class="anim-button" value="Enviar">Enviar <i
                                     class="fa-solid fa-paper-plane"></i><span class="overlay"></span>
                             </button>
-                            <div class="animate__animated animate__fadeIn alert" id="alerta_enviado">Mensaje Enviado
-                            </div>
+                        <!-- MENSAJE -->
+                            <div class="animate__animated animate__fadeIn alert" id="alerta_enviado">Mensaje Enviado</div>
+                        
                         </div>
                     </form>
                 </div>
@@ -512,13 +524,13 @@
             <i class="fa-solid fa-angle-double-up"></i>
         </a>
         <div class="network">
-            <a href="https://www.facebook.com/howard.hernandez.549" class="net-circle"><i
+            <a href="https://www.facebook.com/howard.hernandez.549" class="net-circle dark"><i
                     class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-            <a href="https://github.com/Casiner0" class="net-circle"><i class="fa-brands fa-github"
+            <a href="https://github.com/Casiner0" class="net-circle dark"><i class="fa-brands fa-github"
                     aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/howard-hernandez-94a086196/" class="net-circle"><i
+            <a href="https://www.linkedin.com/in/howard-hernandez-94a086196/" class="net-circle dark"><i
                     class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href="https://t.me/CasinerO" class="net-circle"><i class="fa-brands fa-telegram"
+            <a href="https://t.me/CasinerO" class="net-circle dark"><i class="fa-brands fa-telegram"
                     aria-hidden="true"></i></a>
         </div>
         <div>
@@ -533,15 +545,17 @@
 
     <script src="./js/loader.js"></script>
 
+    <script src="./js/email.min.js"></script>
+
     <script type="text/javascript"> emailjs.init('YsBO0R9p8FVViweW6')</script>
 
     <script src="./js/validations.js"></script>
 
     <script src="./js/funtions.js"></script>
 
-    <script src="./js/portfolio.js"></script>
+    <script src="./js/contacts.js"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
 </body>
 
 </html>
