@@ -56,4 +56,9 @@ input {
     transition: 0.5s;
 }  
   
- 
+@media screen and (max-width: 980px){
+    label{
+        position: absolute;
+        margin-left: 38%;
+    }
+}

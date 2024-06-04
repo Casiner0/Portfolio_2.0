@@ -713,15 +713,17 @@ footer .up{
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #252a2e;
+        background-color: #23261e;
         width: 180px;
     } 
 
     nav.responsive ul{
+        
         display: block !important;
     }
 
     nav.responsive ul li{
+        
         padding: 10px 0;
     }
 
@@ -729,16 +731,19 @@ footer .up{
         position: relative;
     }
 
-    .container-header header nav ul {
+    .cont-nav-responsive {
         display: flex;
         flex-direction: column;
         position: absolute;
         left: 0;
         width: 100%;
-        background-color: #252a2e;
+        height: 280px;
+        background-color: #1e2326;
         border-radius: 5px;
         padding: 10px;
         box-sizing: border-box;
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+
     }
 
     .container-header header .nav-responsive {

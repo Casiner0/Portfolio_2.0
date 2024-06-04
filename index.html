@@ -32,13 +32,13 @@
                 <a class="logo" href="#">Howard</a>
             </div>
             <nav id="nav">
-                <ul>
-                    <li><a id="navLink" class="dark" href="#home">INICIO</a></li>
-                    <li><a id="navLink" class="dark" href="#about">SOBRE MI</a></li>
-                    <li><a id="navLink" class="dark" href="#skills">HABILIDADES</a></li>
-                    <li><a id="navLink" class="dark" href="#cv">CURRICULUM</a></li>
-                    <li><a id="navLink" class="dark" href="#portfolio">PORTAFOLIO</a></li>
-                    <li><a id="navLink" class="dark" href="#contacts">CONTACTO</a></li>
+                <ul class="cont-nav-responsive">
+                    <li><a id="navLink" class="dark" onclick="select()" href="#home">INICIO</a></li>
+                    <li><a id="navLink" class="dark" onclick="select()" href="#about">SOBRE MI</a></li>
+                    <li><a id="navLink" class="dark" onclick="select()" href="#skills">HABILIDADES</a></li>
+                    <li><a id="navLink" class="dark" onclick="select()" href="#cv">CURRICULUM</a></li>
+                    <li><a id="navLink" class="dark" onclick="select()" href="#portfolio">PORTAFOLIO</a></li>
+                    <li><a id="navLink" class="dark" onclick="select()" href="#contacts">CONTACTO</a></li>
                     
                     <input type="checkbox" id="dark-mode" />
                     <label for="dark-mode"></label> 
@@ -545,17 +545,15 @@
 
     <script src="./js/loader.js"></script>
 
-    <script src="./js/email.min.js"></script>
-
-    <script type="text/javascript"> emailjs.init('YsBO0R9p8FVViweW6')</script>
+    <script src="./js/funtions.js"></script>
 
     <script src="./js/validations.js"></script>
 
-    <script src="./js/funtions.js"></script>
-
     <script src="./js/contacts.js"></script>
 
-    
+    <script src="./js/email.min.js"></script>
+
+    <script type="text/javascript"> emailjs.init('YsBO0R9p8FVViweW6')</script>
 </body>
 
 </html>
